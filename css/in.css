@@ -210,8 +210,9 @@ h2.izdadcha1:hover:after, h2.izdadcha2:hover:after, h2.izdadcha3:hover:after, h2
 
 a {
   all: unset;
-  display: inline; /* Restablecer el comportamiento predeterminado */
-  cursor: pointer; /* Mostrar el puntero como en los enlaces normales */
+  display: inline;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .trabajos {
