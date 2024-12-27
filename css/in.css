@@ -212,8 +212,7 @@ a {
   all: unset;
   display: inline;
   cursor: pointer;
-  text-decoration: underline;
-  text-decoration-color: #FF6600;
+  text-decoration: none;
 }
 
 .trabajos {
