@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/in.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Portfolio - Augusto Ferrari</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logofir.png">
     <meta name="description" content="Portfolio de Augusto Ferrari">
@@ -29,6 +30,7 @@
             </div>
             <ul class="bar">
                 <li id="sobremibtn">SOBRE MI</li>
+                <li id="atributosbtn">ATRIBUTOS</li>
                 <li id="trabajosbtn">TRABAJOS</li>
                 <li id="contactobtn">CONTACTO</li>
                 <li id="lenguajebtn" onclick="cambiarLenguaje()">EN</li> 
@@ -38,49 +40,97 @@
     <section class="inicio">
         <h3>AUGUSTO FERRARI</h3>
         <h2>Eficiencia y creatividad <br> <span>en cada línea </span><br> de código</h2>
-        <!-- <h2>Innovando <br> <span> a través </span><br> del código</h2> -->
     </section>
     <section class="sobremi" id="sobremi">
         <div class="contenedor">
-            <p>SOBRE MI</p>
+            <p class="nombre">SOBRE MI</p>
             <h2 class="desc">Estudiante de <span>Ingeneria en Sistema</span> de la <span>ORT</span> Uruguay. <br> Anteriormente, completé un curso de <span>desarrollo web</span> y <span>Bases de datos</span><br> (PHP - MYSQL).</h2>
-            <p id="espacio">EXPERIENCIA</p>
-            <h2 id="div" class="izdadcha1"><span>✮</span>  Desarrollo <span>WEB </span></h2>
+            <p class="nombre" id="espacio">EXPERIENCIA</p>
+            <h2 id="div" class="izdadcha1"><span>✮</span>  Desarrollo <span>WEB </span></h2><br>
             <h2 class="izdadcha2"><span>✮</span>  Desarrollo de <span>APLICACIONES</span></h2>
             <h2 class="izdadcha3"><span>✮</span>  Automatizacion y logistica con <span>SISTEMAS</span> a <span>MEDIDA</span></h2>
             <h2 class="izdadcha4"><span>✮</span>  Diseño de interfaces de <span>GESTION</span></h2>
             <h2 class="izdadcha5"><span>✮</span>  Administracion y manejo de <span>BASE</span> de <span>DATOS</span></h2>
         </div>
     </section>
+    <section class="atributos" id="atributos">
+        <p class="nombre">ATRIBUTOS</p>
+        <p class="tipo">INTERFAZ GRAFICA</p>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra" role="progressbar" style="width: 95%;">HTML - 95%</div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra2" role="progressbar" style="width: 90%;">CSS - 90%</div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra" role="progressbar" style="width: 82%;">JS - 82%</div>
+        </div>
+        <p class="tipo tipo2">LENGUAJES</p>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra2" role="progressbar" style="width: 80%;">PHP - 80%</div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra" role="progressbar" style="width: 94%;">C++ - 94%</div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra2" role="progressbar" style="width: 78%;">C - 78%</div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra" role="progressbar" style="width: 50%;">ADA - 50%</div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra2" role="progressbar" style="width: 86%;">JAVA - 86%</div>
+        </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated mi-barra" role="progressbar" style="width: 60%;">BASH - 60%</div>
+        </div>
+    </section>
     <section id="trabajos" class="trabajos">
-        <p>TRABAJOS</p>
-        <div class="container">
-            <div class="caja1" id="color">
-                <h3 class="titulo">AUTOMOTORA</h3>
-                <br>
-                <p class="desc">Desarrollamos una <span>página web</span> integral para una automotora, diseñada para ofrecer una <span>experiencia de usuario completa</span> y <span>personalizada</span>. La plataforma incluye un <span>sistema completo de cuentas y perfiles</span>, permitiendo a los usuarios puedan <span>editar</span> todos los campos de su información personal de manera <span>sencilla y segura.</span><br>
-                    <br>
-                    Además, hemos implementado un <span>carrito</span> de compras versátil que permite a los clientes realizar <span>reservas</span>, <span>alquilar</span> y <span>comprar</span> vehículos en línea, con un proceso de pago intuitivo y seguro.<br>
-                    <br>
-                    Para la <span>gestión interna</span>, hemos desarrollado un <span>backend</span> avanzado que centraliza todas las operaciones. Este sistema incluye un <span>control de usuarios y permisos</span>, lo que permite a la administración <span>agregar empleados</span> con distintos <span>niveles de acceso</span> según sus <span>roles</span>. Las opciones de administración disponibles incluyen la <span>gestión de usuarios</span>, <span>inventario de vehículos</span>, <span>especificaciones detalladas de cada automóvil</span>, <span>compras</span>, <span>reservas</span>, y otras funciones críticas para el negocio.</p>
+        <p class="nombre">TRABAJOS</p>
+        <div class="card text-center">
+            <div class="card-header">
+                Segundo Trabajo
             </div>
-            <div class="caja1" id="espacio2">
-                <a href="https://pixelshft.com/"><h3 class="titulo">PIXELSHIFT WEB</h3></a>
-                <br>
-                <p id="desc2" class="desc">Desarrollamos una <span>página web</span> especializada en la <span>venta de servicios digitales</span>, diseñada para ofrecer soluciones digitales a empresas, emprendedores o particulares. <br>
-                    <br>
-                    <span>Páginas Web:</span> Creación y desarrollo de sitios web <span>intuitivos</span> y <span>optimizados</span> para satisfacer las necesidades específicas de cada cliente. <br>
-                    <br>
-                    <span>Tiendas Online:</span> Implementación de comercios electrónicos <span>completos</span>, con todas las <span>funcionalidades necesarias</span> para vender productos y servicios en línea de manera <span>eficiente y segura</span>. <br>
-                    <br>
-                    <span>Sistemas de Gestión:</span> Desarrollo de sistemas de gestión adaptados a las <span>necesidades</span> de cada negocio, ya sea en <span>formato web</span> o como <span>aplicaciones de escritorio</span>, permitiendo una administración <span>eficiente y accesible</span> desde cualquier dispositivo. <br>
-                    <br>
-                    Esta página web no solo <span>facilita</span> la adquisición de estos servicios, sino que también ofrece una <span>experiencia</span> de usuario <span>intuitiva</span>, con un <span>diseño atractivo</span> y un <span>proceso de compra simplificado</span></p> 
+            <div class="card-body">
+                <h5 class="card-title">PIXELSHIFT WEB</h5>
+                <p class="card-text">Desarrollamos una <span>página web</span> especializada en la <span>venta de servicios digitales</span>, diseñada para ofrecer soluciones digitales a empresas, emprendedores o particulares. <br></p>
+                <p class="card-text minimizado">Páginas Web:</span> Creación y desarrollo de sitios web <span>intuitivos</span> y <span>optimizados</span> para satisfacer las necesidades específicas de cada cliente. <br></p>
+                <p class="card-text minimizado"><span>Tiendas Online:</span> Implementación de comercios electrónicos <span>completos</span>, con todas las <span>funcionalidades necesarias</span> para vender productos y servicios en línea de manera <span>eficiente y segura</span>. <br></p>
+                <p class="card-text minimizado"><span>Sistemas de Gestión:</span> Desarrollo de sistemas de gestión adaptados a las <span>necesidades</span> de cada negocio, ya sea en <span>formato web</span> o como <span>aplicaciones de escritorio</span>, permitiendo una administración <span>eficiente y accesible</span> desde cualquier dispositivo. <br></p>
+                <p class="card-text">Esta página web no solo <span>facilita</span> la adquisición de estos servicios, sino que también ofrece una <span>experiencia</span> de usuario <span>intuitiva</span>, con un <span>diseño atractivo</span> y un <span>proceso de compra simplificado</span></p>
+                <a href="https://pixelshft.com/inicio/" target="_blank" class="btn btn-outline-primary">VISITAR</a>
+            </div>
+            <div class="card-footer text-muted">
+                hace 6 meses
+            </div>
+        </div>
+        <div class="card text-center cardsep">
+            <div class="card-header">
+                Primer Trabajo
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">AUTOMOTORA</h5>
+                <p class="card-text">Desarrollamos una <span>página web</span> integral para una automotora, diseñada para ofrecer una <span>experiencia de usuario completa</span> y <span>personalizada</span>. La plataforma incluye un <span>sistema completo de cuentas y perfiles</span>, permitiendo a los usuarios puedan <span>editar</span> todos los campos de su información personal de manera <span>sencilla y segura.</span></p>
+                
+                <p class="card-text">Además, hemos implementado un <span>carrito</span> de compras versátil que permite a los clientes realizar <span>reservas</span>, <span>alquilar</span> y <span>comprar</span> vehículos en línea, con un proceso de pago intuitivo y seguro.</p>
+                
+                <p class="card-text">Para la <span>gestión interna</span>, hemos desarrollado un <span>backend</span> avanzado que centraliza todas las operaciones. Este sistema incluye un <span>control de usuarios y permisos</span>, lo que permite a la administración <span>agregar empleados</span> con distintos <span>niveles de acceso</span> según sus <span>roles</span>. Las opciones de administración disponibles incluyen la <span>gestión de usuarios</span>, <span>inventario de vehículos</span>, <span>especificaciones detalladas de cada automóvil</span>, <span>compras</span>, <span>reservas</span>, y otras funciones críticas para el negocio.</p>
+
+                <a href="#" id="btnAutomotora" class="btn btn-outline-primary">VISITAR</a>
+                <div id="alertaAutomotora" class="alert alert-danger alert-dismissible fade show d-none" role="alert">
+                    <strong>¡Atención!  </strong>Este proyecto ha sido retirado y no está disponible para su visualización en línea.
+                    <button type="button" class="close" aria-label="Close" onclick="cerrarAlerta()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                hace 2 año
             </div>
         </div>
     </section>
     <section class="contacto" id="contacto">
-        <p>CONTACTO</p>
+        <p class="nombre">CONTACTO</p>
         <div class="op1">
             <h2 id="wpp"><a href="https://api.whatsapp.com/send?phone=59892150899" target="_blank">WHATSAPP</a></h2>
             <h2 class="contbtn color"><a href="https://www.instagram.com/aguferrari1?igsh=ZDU5aXNjZXM0azdw&utm_source=qr" target="_blank">INSTAGRAM</a></h2>
@@ -91,6 +141,9 @@
     <footer>
         <p>Augusto Ferrari Desing - Portfolio 2024</p>
     </footer>
-    <script src="js/in.js"></script>    
+    <script src="js/in.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
 </body>
 </html>

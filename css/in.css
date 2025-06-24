@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -68,6 +72,7 @@ header {
     font-size: 13px;
     text-align: right;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .menubar .bar li:hover {
@@ -87,14 +92,16 @@ header {
     font-size: 17px;
     letter-spacing: 4px;
     color: #a89c89;
+    font-weight: 700;
 }
 
 .inicio h2 {
-    font-size: 80px;
+    font-size: 85px;
     color: #cebda2;
     padding-right: 10%;
     padding-left: 10%;
     margin-bottom: 20%;
+    font-weight: 700;
 }
 
 .inicio h2 span {
@@ -107,7 +114,7 @@ header {
     margin-left: 20%;
 }
 
-.sobremi .contenedor p {
+.nombre {
     margin-top: 5%;
     color: #a89c89;
 }
@@ -127,11 +134,6 @@ header {
     color: #ec7c26;
 }
 
-
-.sobremi .contenedor #div {
-    margin-top: 15px;
-}
-
 h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5 {
     position: relative;
     overflow: hidden;
@@ -144,7 +146,7 @@ h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5 {
 }
 
 h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5 {
-    margin-top: 5%;
+    margin-top: 2.5%;
 }
 
 h2.izdadcha1:after {
@@ -208,6 +210,46 @@ h2.izdadcha1:hover:after, h2.izdadcha2:hover:after, h2.izdadcha3:hover:after, h2
 
 /* TRABAJOS */
 
+
+.atributos {
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.atributos .nombre {
+    margin-bottom: 1.5%;
+}
+
+.atributos .tipo {
+    color: #a89c89;
+    font-size: 10px;
+}
+
+.progress {
+    margin-right: 40%;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, rgba(42, 42, 42, 0.2), rgba(47, 47, 47, 0.4), rgba(48, 48, 48, 0.2)) !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.progress-bar.mi-barra {
+    background-color: #a89c89; /* color personalizado */
+    color: #000;
+    font-weight: 700;
+}
+
+
+.progress-bar.mi-barra2 {
+    background-color: #ec7c26; /* color personalizado */
+    color: #000;
+    font-weight: 700;
+}
+
+
+/* TRABAJOS */
+
 a {
   all: unset;
   display: inline;
@@ -216,82 +258,72 @@ a {
 }
 
 .trabajos {
-    margin-top: 20%;
+    margin-top: 15.7%;
     margin-left: 20%;
 }
 
-.trabajos p {
+.trabajos .nombre {
     margin-top: 5%;
+    margin-bottom: 2%;
     color: #a89c89;
 }
 
-.trabajos .container {
-    display: flex;
-    gap: 20px; 
-    flex-wrap: wrap;
-}
-
-
-.trabajos .container .caja1 {
-    width: calc(33.333% - 20px);
-    min-height: 310px;
-    margin-top: 5%;
+.trabajos .card {
     background: linear-gradient(135deg, rgba(42, 42, 42, 0.2), rgba(47, 47, 47, 0.4), rgba(48, 48, 48, 0.2));
-    width: 35%;
-    height: 35%;
-    text-align: center;
-    padding: 10px;
+    color:  #a89c89; 
+    width: 80%;
     transition: box-shadow 0.3s ease-in-out; 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.079), 0 0 25px rgba(255, 255, 255, 0.079);
 }
 
-.trabajos .container #espacio2 {
-    margin-left: 3%;
+.trabajos .cardsep {
+    margin-top: 2%;
 }
 
-.trabajos .container .caja1:hover {
+.trabajos .card:hover {
     box-shadow: 0 0 5px #ec7c26, 0 0 25px #ec7c26;
 }
 
-.trabajos .container .caja1 .titulo, .trabajos .container .caja1 .titulo2 {
-    margin-top: 10px;
-    color:  #a89c89; 
-    font-size: 19px;
-    margin-bottom: 10px;
-    transition: text-shadow 0.3s ease-in-out; 
-}
-
-.trabajos .container .caja1:hover .titulo {
-    text-shadow: 0 0 5px #a89c89, 0 0 15px #ec7c26;
-}
-
-.trabajos .container .caja1:hover span {
+.trabajos .card:hover span {
     color: #ec7c26;
 }
 
-.trabajos .container .caja1 p {
-    color: #a89c89;
-    text-align: left; 
-    flex: 1;
+.trabajos .minimizado {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.trabajos .card .btn-outline-primary {
+  color: #a89c89;
+  border-color: #ec7c26;
+}
+
+.trabajos .card .btn-outline-primary:hover {
+  background-color: #ec7c26;
+  color: #000000;
+}
+
+.trabajos .alert{
+    margin-top: 2%;
 }
 
 /* CONTACTO */
 
 .contacto {
     position: relative;
-    margin-top: 20%;
-    margin-left: 20%;
+    margin-top: 11.5%;
     overflow: hidden; /* Para asegurarnos de que la imagen no desborde */
 }
 
-.contacto p {
+.contacto .nombre {
     margin-top: 5%;
     color: #a89c89;
+    margin-left: 20%;
 }
 
-.contacto a {
-    text-decoration: none;
-    color: inherit;
+.contacto a, a:visited {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .contacto h2 {
@@ -300,13 +332,14 @@ a {
     padding: 4px;
     transition: background-color 0.7s ease, color 0.7s ease;
     transition: box-shadow 0.7s ease, color 0.7s ease;
+    margin-left: 20%;
 }
 
 .contacto .op1 {
     opacity: 1;
-    margin-top: 5%;
+    margin-top: 1%;
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .contacto .contbtn {
@@ -341,7 +374,7 @@ a {
 footer {
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 footer p {
@@ -420,31 +453,22 @@ footer p {
         font-size: 10px;
     }
 
-    .trabajos .container {
-        flex-direction: column;
-        align-items: left;
-        margin-left: 10px;
-    }
-
-    .trabajos .container .caja1 {
-        width: 70%;
-    }
-
-    .trabajos .container .caja1 p {
+    .trabajos .card p {
         font-size: 10px;
-    }
-
-    .trabajos .container #espacio2 {
-        margin-left: 0%;
     }
 
     .contacto p {
         font-size: 10px;
     }
 
+    .contacto h2 {
+        margin-left: 0%;
+    }
+
+
     .contacto .op1 {
         flex-direction: column;
-        align-items: left;
+        align-items: center;
     }
 
     .contacto .contbtn {
@@ -456,5 +480,12 @@ footer p {
         font-size: 13px;
     }
 
+
+}
+
+@media (max-width: 340px) {
+    .alert {
+        font-size: 10px;
+    }
 
 }
