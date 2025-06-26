@@ -46,6 +46,8 @@ body {
     padding-top: 70px; 
 }
 
+/* Nav */
+
 header {
     position: fixed;
     top: 0;
@@ -101,12 +103,16 @@ header {
 }
 
 
-/* SOBRE MI */
+/* Inicio */
 
 .inicio {
-    margin-top: 13%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    margin-top: 0; /* Remover el margin-top: 13% existente */
 }
 
 .inicio h3 {
@@ -121,7 +127,7 @@ header {
     color: #cebda2;
     padding-right: 10%;
     padding-left: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 0;
     font-weight: 700;
 }
 
@@ -335,10 +341,10 @@ h2.izdadcha1:hover:after, h2.izdadcha2:hover:after, h2.izdadcha3:hover:after, h2
 /* TRABAJOS */
 
 a {
-  all: unset;
-  display: inline;
-  cursor: pointer;
-  text-decoration: none;
+    all: unset;
+    display: inline;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .trabajos {
@@ -378,19 +384,55 @@ a {
 }
 
 .trabajos .card .btn-outline-primary {
-  color: #a89c89;
-  border-color: #ec7c26;
+    color: #a89c89;
+    border-color: #ec7c26;
 }
 
 .trabajos .card .btn-outline-primary:hover {
-  background-color: #ec7c26;
-  color: #000000;
+    background-color: #ec7c26;
+    color: #000000;
 }
 
-.trabajos .alert{
+.trabajos .card .alert-danger {
+    background: linear-gradient(135deg, rgba(42, 42, 42, 0.2), rgba(47, 47, 47, 0.4), rgba(48, 48, 48, 0.2)) !important;
+    border-color: #ec7c26 !important;
+    color: #a89c89;
+}
+
+.trabajos .card .alert-smooth {
     margin-top: 2%;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 0;
+    border: none;
 }
 
+.trabajos .card .alert-smooth.show {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 200px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+}
+
+.trabajos .card .alert-smooth.hiding {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
+    padding: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.trabajos .card .close span {
+    position: relative;
+    bottom: 3px;
+}
 /* CONTACTO */
 
 .contacto {
@@ -465,20 +507,109 @@ footer p {
     color: #a89c89;
 }
 
-@media (max-width: 1366px) {
-    .contacto .contbtn {
-        margin-left: 5%;
+/* -------> Monitores <----------*/
+/* Muy grandes - 1920px+ */
+@media (min-width: 1920px) {
+    .inicio h2 {
+        font-size: 100px;
+    }
+    
+    .sobremi .contenedor .desc {
+        font-size: 60px;
+    }
+    
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 45px;
     }
 }
 
-@media (max-width: 920px) {
+/* Grande - 1440px to 1919px */
+@media (max-width: 1919px) and (min-width: 1440px) {
+    .inicio h2 {
+        font-size: 90px;
+    }
+    
+    .sobremi .contenedor .desc {
+        font-size: 55px;
+    }
+}
 
+/* Mas usada - 1366px to 1439px */
+@media (max-width: 1439px) and (min-width: 1200px) {
+    .contacto .contbtn {
+        margin-left: 8%;
+    }
+    
+    .inicio h2 {
+        font-size: 80px;
+    }
+    
+    .sobremi .contenedor .desc {
+        font-size: 48px;
+    }
+    
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 32px;
+    }
+}
+
+/* Chicas y medianas - 1024px to 1199px */
+@media (max-width: 1199px) and (min-width: 1024px) {
+    .sobremi .contenedor {
+        margin-left: 15%;
+    }
+    
+    .atributos {
+        margin-left: 15%;
+    }
+    
+    .trabajos {
+        margin-left: 15%;
+    }
+    
+    .contacto .nombre {
+        margin-left: 15%;
+    }
+    
+    .contacto h2 {
+        margin-left: 15%;
+    }
+    
+    .contacto .contbtn {
+        margin-left: 8%;
+    }
+    
+    .inicio h2 {
+        font-size: 70px;
+    }
+    
+    .sobremi .contenedor .desc {
+        font-size: 42px;
+        padding-right: 10%;
+    }
+    
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 28px;
+        padding-right: 10%;
+    }
+    
+    .progress {
+        margin-right: 30%;
+    }
+    
+    .trabajos .card {
+        width: 90%;
+    }
+}
+
+/* Normal - 920px to 1023px */
+@media (max-width: 1023px) and (min-width: 920px) {
     h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5 {
-        margin-top: 0%;
+        margin-top: 1%;
     }
      
     .sobremi .contenedor .desc {
-        font-size: 35px;
+        font-size: 38px;
     }
 
     .trabajos .nombre {
@@ -488,18 +619,346 @@ footer p {
     .contacto .op1 {
         margin-top: 0%;
     }
+    
     .contacto .contbtn {
         margin-left: 5%;
     }
+    
+    .inicio h2 {
+        font-size: 65px;
+    }
+    
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 25px;
+    }
+    
+    .progress {
+        margin-right: 20%;
+    }
+    
+    .sobremi .contenedor {
+        margin-left: 10%;
+    }
+    
+    .atributos {
+        margin-left: 10%;
+    }
+    
+    .trabajos {
+        margin-left: 10%;
+    }
 
-
+    .contacto .nombre, .contacto h2 {
+        margin-left: 10%;
+    }
 }
 
+@media (max-width: 1023px) {
+    .trabajos .card .close span {
+        display: none;
+    }
+}
+
+/* -------> Tablet <----------*/
+/* Grande - 768px to 919px */
+@media (max-width: 919px) and (min-width: 769px) {
+    .menubar {
+        padding: 15px 15px;
+    }
+    
+    .menubar img {
+        width: 60px;
+        height: 45px;
+    }
+
+    .redes i {
+        font-size: 20px;
+    }
+    
+    .menubar .bar {
+        font-size: 11px;
+    }
+
+    .inicio h2 {
+        font-size: 55px;
+    }
+    
+    .inicio h3 {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .sobremi .contenedor {
+        margin-left: 8%;
+        padding-right: 8%;
+    }
+    
+    .sobremi .contenedor p {
+        font-size: 12px;
+    }
+
+    .sobremi .contenedor .desc {
+        font-size: 32px;
+        padding-right: 5%;
+    }
+
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 20px;
+        padding-right: 5%;
+    }
+    
+    .atributos {
+        margin-left: 8%;
+        padding-right: 8%;
+    }
+    
+    .progress {
+        margin-right: 10%;
+    }
+
+    .trabajos {
+        margin-left: 8%;
+        padding-right: 8%;
+    }
+    
+    .trabajos .card {
+        width: 95%;
+    }
+    
+    .trabajos p {
+        font-size: 12px;
+    }
+
+    .trabajos .card p {
+        font-size: 12px;
+    }
+
+    .contacto {
+        padding: 0 8%;
+    }
+    
+    .contacto .nombre {
+        margin-left: 0%;
+    }
+    
+    .contacto h2 {
+        margin-left: 0%;
+        font-size: 28px;
+    }
+    
+    .contacto p {
+        font-size: 12px;
+    }
+
+    .contacto .op1 {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contacto .contbtn {
+        margin-left: 0%;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Normal - 481px to 768px */
 @media (max-width: 768px) {
 
+    .inicio {
+        min-height: calc(100vh - 70px); /* Restar la altura del header */
+    }
+
+    .menubar img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .redes i {
+        font-size: 18px;
+    }
+    
+    .menubar .bar {
+        font-size: 10px;
+    }
+
+    .inicio h2 {
+        font-size: 45px;
+        padding: 0 5%;
+    }
+    
+    .inicio h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .sobremi .contenedor {
+        margin-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .sobremi .contenedor p {
+        font-size: 11px;
+    }
+
+    .sobremi .contenedor .desc {
+        font-size: 28px;
+        padding-right: 0%;
+    }
+    
+    .sobremi button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 18px;
+        padding-right: 0%;
+        line-height: 1.3;
+    }
+    
+    .atributos {
+        margin-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .progress {
+        margin-right: 5%;
+    }
+
+    .trabajos {
+        margin-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .trabajos .card {
+        width: 100%;
+    }
+    
+    .trabajos p {
+        font-size: 11px;
+    }
+
+    .trabajos .card p {
+        font-size: 11px;
+    }
+
+    .contacto {
+        padding: 0 5%;
+    }
+    
+    .contacto h2 {
+        margin-left: 0%;
+        font-size: 24px;
+    }
+    
+    .contacto p {
+        font-size: 11px;
+    }
+
+    .contacto .op1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contacto .contbtn {
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+    
+    footer p {
+        font-size: 13px;
+    }
+}
+
+/* -------> Celulares <----------*/
+/* PRO MAX - 426px to 480px */
+@media (max-width: 480px) and (min-width: 426px) {
+    .menubar {
+        padding: 12px 10px;
+    }
+    
+    .menubar img {
+        width: 45px;
+        height: 35px;
+    }
+
+    .redes .social-media {
+        gap: 15px;
+    }
+
+    .redes i {
+        font-size: 16px;
+    }
+    
+    .menubar .bar {
+        font-size: 9px;
+        gap: 3px;
+    }
+
+    .inicio h2 {
+        font-size: 38px;
+        padding: 0 3%;
+    }
+    
+    .inicio h3 {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .sobremi .contenedor {
+        margin-left: 3%;
+        padding-right: 3%;
+    }
+
+    .sobremi .contenedor .desc {
+        font-size: 24px;
+    }
+    
+    .sobremi button {
+        font-size: 11px;
+        padding: 6px 12px;
+        margin-right: 5px;
+    }
+
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .atributos {
+        margin-left: 3%;
+        padding-right: 3%;
+    }
+
+    .trabajos {
+        margin-left: 3%;
+        padding-right: 3%;
+    }
+
+    .contacto {
+        padding: 0 3%;
+    }
+    
+    .contacto h2 {
+        font-size: 20px;
+    }
+}
+
+/* Normal - 376px to 425px */
+@media (max-width: 425px) and (min-width: 376px) {
     .menubar img {
         width: 40px;
         height: 30px;
+    }
+
+    .redes .social-media {
+        gap: 12px;
     }
 
     .redes i {
@@ -507,61 +966,183 @@ footer p {
     }
     
     .menubar .bar {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .inicio h2 {
-        font-size: 45px;
+        font-size: 35px;
+    }
+    
+    .inicio h3 {
+        font-size: 11px;
     }
 
-    .sobremi .contenedor p {
+    .sobremi .contenedor .desc {
+        font-size: 22px;
+    }
+
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 13px;
+    }
+    
+    .contacto h2 {
+        font-size: 18px;
+    }
+}
+
+/* Chiquito - 340px to 375px */
+@media (max-width: 375px) and (min-width: 340px) {
+    .menubar {
+        padding: 10px 8px;
+    }
+    
+    .menubar img {
+        width: 35px;
+        height: 25px;
+    }
+
+    .redes .social-media {
+        gap: 10px;
+    }
+
+    .redes i {
+        font-size: 14px;
+    }
+    
+    .menubar .bar {
+        font-size: 7px;
+        gap: 2px;
+    }
+
+    .inicio h2 {
+        font-size: 32px;
+        padding: 0 2%;
+    }
+    
+    .inicio h3 {
         font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .sobremi .contenedor {
+        margin-left: 2%;
+        padding-right: 2%;
     }
 
     .sobremi .contenedor .desc {
         font-size: 20px;
     }
-
-    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5 {
-        font-size: 17px;
-    }
-
-    .trabajos p {
+    
+    .sobremi button {
         font-size: 10px;
+        padding: 5px 10px;
     }
 
-    .trabajos .card p {
-        font-size: 10px;
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 12px;
+    }
+    
+    .atributos {
+        margin-left: 2%;
+        padding-right: 2%;
     }
 
-    .contacto p {
-        font-size: 10px;
+    .trabajos {
+        margin-left: 2%;
+        padding-right: 2%;
     }
 
+    .contacto {
+        padding: 0 2%;
+    }
+    
     .contacto h2 {
-        margin-left: 0%;
+        font-size: 16px;
     }
-
-    .contacto .op1 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contacto .contbtn {
-        margin-left: 0%;
-        margin-top: 2%;
-    }
-
-    footer p {
-        font-size: 13px;
-    }
-
-
-}
-
-@media (max-width: 340px) {
+    
     .alert {
         font-size: 10px;
     }
+    
+    footer p {
+        font-size: 12px;
+    }
+}
+/* Muy chico - up to 339px */
+@media (max-width: 339px) {
+    .menubar {
+        padding: 8px 5px;
+    }
+    
+    .menubar img {
+        width: 30px;
+        height: 20px;
+    }
 
+    .redes .social-media {
+        gap: 8px;
+    }
+
+    .redes i {
+        font-size: 12px;
+    }
+    
+    .menubar .bar {
+        font-size: 6px;
+        gap: 1px;
+    }
+
+    .inicio h2 {
+        font-size: 28px;
+        padding: 0 1%;
+    }
+    
+    .inicio h3 {
+        font-size: 9px;
+        letter-spacing: 0px;
+    }
+
+    .sobremi .contenedor {
+        margin-left: 1%;
+        padding-right: 1%;
+    }
+
+    .sobremi .contenedor .desc {
+        font-size: 18px;
+    }
+    
+    .sobremi button {
+        font-size: 9px;
+        padding: 4px 8px;
+    }
+
+    h2.izdadcha1, h2.izdadcha2, h2.izdadcha3, h2.izdadcha4, h2.izdadcha5, h2.izdadcha6, h2.izdadcha7 {
+        font-size: 10px;
+    }
+    
+    .atributos {
+        margin-left: 1%;
+        padding-right: 1%;
+    }
+
+    .trabajos {
+        margin-left: 1%;
+        padding-right: 1%;
+    }
+
+    .contacto {
+        padding: 0 1%;
+    }
+    
+    .contacto h2 {
+        font-size: 14px;
+    }
+    
+    .alert {
+        font-size: 9px;
+    }
+    
+    footer p {
+        font-size: 11px;
+    }
 }

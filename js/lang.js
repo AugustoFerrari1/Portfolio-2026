@@ -76,7 +76,7 @@ const traducciones = {
     
     // Sección Sobre Mi
     sobre_mi: "ABOUT ME",
-    sobre_mi_texto: "Student of <span>Systems Engineering</span> at <span>ORT Uruguay</span>, with training in <span>web development</span> and <span>databases</span>.<br> I have created over <span>5 personal projects</span> on various platforms, applying <span>good coding practices</span> and <span>backend logic</span>.",
+    sobre_mi_texto: "Student of <span>Systems Engineering</span> at <span>ORT Uruguay</span>, with studies in <span>web development</span> and <span>databases</span>.<br> I have created over <span>5 personal projects</span> on various platforms, applying <span>good coding practices</span> and <span>backend logic</span>.",
     btncv: "VIEW CV",
     btncer: "CERTIFICATE",
     
