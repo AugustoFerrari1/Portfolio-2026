@@ -831,6 +831,7 @@ footer p {
     .atributos {
         margin-left: 5%;
         padding-right: 5%;
+        margin-top: 25%;
     }
     
     .atributos p {
@@ -844,6 +845,7 @@ footer p {
     .trabajos {
         margin-left: 5%;
         padding-right: 5%;
+        margin-top: 25%;
     }
     
     .trabajos .card {
@@ -860,6 +862,7 @@ footer p {
 
     .contacto {
         padding: 0 5%;
+        margin-top: 20%;
     }
     
     .contacto h2 {
@@ -947,15 +950,18 @@ footer p {
     .atributos {
         margin-left: 3%;
         padding-right: 3%;
+        margin-top: 30%;
     }
 
     .trabajos {
         margin-left: 3%;
         padding-right: 3%;
+        margin-top: 30%;
     }
 
     .contacto {
         padding: 0 3%;
+        margin-top: 25%;
     }
     
     .contacto h2 {
@@ -999,6 +1005,18 @@ footer p {
         line-height: 20px;
         padding-right: 0%;
         margin-top: 4%;
+    }
+
+    .atributos {
+        margin-top: 35%;
+    }
+
+    .trabajos {
+        margin-top: 35%;
+    }
+
+    .contacto {
+        margin-top: 30%;
     }
     
     .contacto h2 {
@@ -1064,15 +1082,18 @@ footer p {
     .atributos {
         margin-left: 2%;
         padding-right: 2%;
+        margin-top: 40%;
     }
 
     .trabajos {
         margin-left: 2%;
         padding-right: 2%;
+        margin-top: 40%;
     }
 
     .contacto {
         padding: 0 2%;
+        margin-top: 35%;
     }
     
     .contacto h2 {
@@ -1145,15 +1166,18 @@ footer p {
     .atributos {
         margin-left: 1%;
         padding-right: 1%;
+        margin-top: 45%;
     }
 
     .trabajos {
         margin-left: 1%;
         padding-right: 1%;
+        margin-top: 45%;
     }
 
     .contacto {
         padding: 0 1%;
+        margin-top: 40%;
     }
     
     .contacto h2 {

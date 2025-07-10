@@ -125,7 +125,7 @@ function inicializarAnimacionesRevealText() {
         scrollTrigger: {
           trigger: elemento,
           start: 'top 85%',
-          end: 'top 40%',
+          end: 'top 30%',
           scrub: true,
           toggleActions: 'play play reverse reverse',
           markers: false,
@@ -144,7 +144,7 @@ function inicializarAnimacionesRevealText() {
         scrollTrigger: {
           trigger: elemento,
           start: 'top 85%',
-          end: 'top 40%',
+          end: 'top 30%',
           scrub: true,
           toggleActions: 'play play reverse reverse',
           markers: false,
@@ -185,7 +185,7 @@ function reiniciarAnimacionesRevealText() {
         scrollTrigger: {
           trigger: elemento,
           start: 'top 85%',
-          end: 'top 40%',
+          end: 'top 30%',
           scrub: true,
           toggleActions: 'play play reverse reverse',
           markers: false,
@@ -203,7 +203,7 @@ function reiniciarAnimacionesRevealText() {
         scrollTrigger: {
           trigger: elemento,
           start: 'top 85%',
-          end: 'top 40%',
+          end: 'top 30%',
           scrub: true,
           toggleActions: 'play play reverse reverse',
           markers: false,

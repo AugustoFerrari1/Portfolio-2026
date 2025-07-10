@@ -29,11 +29,11 @@ window.traducciones = {
     'exp.3':
       '<span>✮</span>  Automatizacion y logistica con <span>SISTEMAS</span> a <span>MEDIDA</span>',
     'exp.4': '<span>✮</span>  Diseño de interfaces de <span>GESTION</span>',
-    'exp.5': '<span>✮</span>  Administracion y manejo de <span>BASE</span> de <span>DATOS</span>',
+    'exp.5': '<span>✮</span>  Codificacion y administracion de <span>BASE</span> de <span>DATOS</span>',
     'exp.6':
-      '<span>✮</span> Automatización de <span>PRUEBAS UNITARIAS</span> y <span>COBERTURA DE CÓDIGO</span>',
+      '<span>✮</span> Automatización de <span>PRUEBAS UNITARIAS</span>',
     'exp.7':
-      '<span>✮</span> Ejecución de <span>PRUEBAS EXPLORATORIAS</span> en entornos de <span>VALIDACIÓN CONTINUA</span>',
+      '<span>✮</span> Ejecución de <span>PRUEBAS EXPLORATORIAS</span>',
 
     // Atributos
     atr: 'ATRIBUTOS',
@@ -90,7 +90,7 @@ window.traducciones = {
     // Sección Sobre Mi
     sobre_mi: 'ABOUT ME',
     sobre_mi_texto:
-      'Student of <span>Systems Engineering</span> at <span>ORT Uruguay</span>, with studies in <span>web development</span> and <span>databases</span>.<br> I have created over <span>5 personal projects</span> on various platforms, applying <span>good coding practices</span> and <span>backend logic.</span>',
+      'Student of <span>Systems Engineering</span> at <span>ORT Uruguay</span>, with a background in <span>web development</span> and <span>databases</span>.<br> I have created over <span>5 personal projects</span> on various platforms, applying <span>clean coding practices</span> and <span>backend logic.</span>',
     btncv: 'VIEW CV',
     btncer: 'CERTIFICATE',
 
@@ -101,24 +101,24 @@ window.traducciones = {
 
     // Experiencia
     exp: 'EXPERIENCE',
-    'exp.1': '<span>✮</span>  WEB <span>DEVELOPMENT</span>',
-    'exp.2': '<span>✮</span>  APPLICATION <span>DEVELOPMENT</span>',
+    'exp.1': '<span>✮</span>  Web <span>DEVELOPMENT</span>',
+    'exp.2': '<span>✮</span>  Application <span>DEVELOPMENT</span>',
     'exp.3':
-      '<span>✮</span>  Automation and logistics with <span>TAILORED</span> <span>SYSTEMS</span>',
+      '<span>✮</span>  Automation and logistics with <span>CUSTOM</span> <span>SYSTEMS</span>',
     'exp.4': '<span>✮</span>  Design of <span>MANAGEMENT</span> interfaces',
-    'exp.5': '<span>✮</span>  Administration and management of <span>DATABASES</span>',
+    'exp.5': '<span>✮</span>  Coding and administration of <span>DATABASES</span>',
     'exp.6':
-      '<span>✮</span>  Automation of <span>UNIT TESTING</span> and <span>CODE COVERAGE</span>',
+      '<span>✮</span>  Automation of <span>UNIT TESTING</span>',
     'exp.7':
-      '<span>✮</span>  Execution of <span>EXPLORATORY TESTING</span> in <span>CONTINUOUS VALIDATION</span> environments',
+      '<span>✮</span>  Execution of <span>EXPLORATORY TESTING</span>',
 
     // Atributos
     atr: 'ATTRIBUTES',
-    interfaz: 'GRAPHIC INTERFACE',
+    interfaz: 'USER INTERFACE',
     lenguaje: 'LANGUAGES',
 
     // Trabajos
-    trabajos: 'WORKS',
+    trabajos: 'PROJECTS',
     segundo: 'Second Work',
     primer: 'First Work',
     automotora: 'AUTOMOTORA',
@@ -129,9 +129,9 @@ window.traducciones = {
     'card1.2':
       '<span>Web Pages:</span> Creation and development of <span>intuitive</span> and <span>optimized</span> websites to meet the specific needs of each client.<br>',
     'card1.3':
-      '<span>Online Stores:</span> Implementation of <span>complete</span> e-commerce, with all the <span>necessary functionalities</span> to sell products and services online in a <span>efficient and secure</span> manner.<br>',
+      '<span>Online Stores:</span> Implementation of <span>complete</span> e-commerce solutions, with all the <span>necessary functionalities</span> to sell products and services online in an <span>efficient and secure</span> manner.<br>',
     'card1.4':
-      '<span>Management Systems:</span> Development of management systems tailored to the <span>needs</span> of each business, whether in <span>web format</span> or as <span>desktop applications</span>, allowing for <span>efficient and accessible</span> management from any device.<br>',
+      '<span>Management Systems:</span> Development of management systems tailored to the <span>needs</span> of each business, whether in <span>web format</span> or as <span>desktop applications</span>, allowing <span>efficient and accessible</span> management from any device.<br>',
     'card1.5':
       'This website not only <span>facilitates</span> the acquisition of these services but also offers an <span>intuitive</span> user experience, with an <span>attractive design</span> and a <span>simplified purchase process</span>',
 
