@@ -18,6 +18,29 @@ Aquí podrás encontrar una colección de mis trabajos más recientes y represen
 
 # Proyectos
 
+## ALQUILERUY
+
+**Descripción:**  
+**AlquilerUY** es una **plataforma marketplace** de alquiler de **objetos y propiedades** en Uruguay. Permite a los usuarios **buscar y alquilar** desde casas y autos hasta herramientas y equipos, mientras que los vendedores pueden **publicar sus productos** y **gestionar reservas** de manera eficiente.
+
+La plataforma incluye un **sistema de búsqueda avanzada** con **categorías organizadas**, **gestión completa de reservas**, **pagos integrados con MercadoPago** y un **sistema de reseñas y calificaciones** para garantizar la confianza entre usuarios.
+
+**Características Principales:**
+- Sistema de búsqueda avanzada con categorías organizadas
+- Gestión completa de reservas
+- Pagos integrados con MercadoPago
+- Sistema de reseñas y calificaciones
+- Publicación y gestión de productos para vendedores
+- Alquiler de objetos y propiedades (casas, autos, herramientas, equipos)
+
+**Tecnologías Utilizadas:**  
+Next.js 14 · React 18 · TypeScript · Prisma ORM · PostgreSQL · NextAuth.js · MercadoPago · Tailwind CSS · Radix UI
+
+**Ver Proyecto:**
+- Actualmente el proyecto no está disponible para su visualización en línea
+
+---
+
 ## PIXELSHIFT WEB
 
 **Descripción:**  
@@ -121,22 +144,6 @@ El proyecto incluye un workflow de GitHub Actions (`.github/workflows/deploy.yml
 2. Navega a **Settings** → **Pages**
 3. En **Source**, selecciona **GitHub Actions**
 4. El workflow se ejecutará automáticamente en cada push
-
-### Configuración Manual
-
-Si prefieres desplegar manualmente:
-
-1. **Construye el proyecto:**
-   ```bash
-   npm run build
-   ```
-
-2. **Configura GitHub Pages:**
-   - Ve a **Settings** → **Pages** en tu repositorio
-   - En **Source**, selecciona la rama donde está la carpeta `dist`
-   - O usa la carpeta `dist` como raíz si está en la rama `gh-pages`
-
-**Nota:** Si tu repositorio está en `usuario.github.io/Portfolio-2025`, el proyecto ya está configurado. Si está en la raíz (`usuario.github.io`), cambia el `base` en `vite.config.js` a `'/'`.
 
 ---
 
