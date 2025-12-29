@@ -281,6 +281,14 @@ header {
     color: #ec7c26;
 }
 
+.experiencia-item .star-svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
 .experiencia-item:hover {
     transform: translateX(5px);
 }

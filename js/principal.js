@@ -8,6 +8,7 @@ import {
   actualizarAnimacionExperiencia,
   limpiarTodosSplitTypes,
   inicializarAnimacionesRevealText,
+  inicializarAnimacionesEstrellasSVG,
 } from './animaciones-texto.js';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { inicializarBarraProgreso } from './scroll-progress.js';
@@ -52,6 +53,10 @@ function inicializarAplicacion() {
   setTimeout(() => {
     inicializarAnimacionesRevealText();
   }, 400);
+
+  setTimeout(() => {
+    inicializarAnimacionesEstrellasSVG();
+  }, 600);
 
   console.log('Todos los módulos cargados correctamente');
 }
@@ -128,6 +133,7 @@ window.actualizarAnimacionExperiencia = actualizarAnimacionExperiencia;
 window.reiniciarTodasLasAnimacionesTexto = reiniciarTodasLasAnimacionesTexto;
 window.limpiarTodosSplitTypes = limpiarTodosSplitTypes;
 window.inicializarAnimacionesRevealText = inicializarAnimacionesRevealText;
+window.inicializarAnimacionesEstrellasSVG = inicializarAnimacionesEstrellasSVG;
 
 // Las funciones globales ya están expuestas desde navegacion-scroll.js
 

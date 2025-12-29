@@ -1,4 +1,4 @@
-// Archivo para manejar animaciones de texto con SplitType
+// Animaciones de texto con SplitType
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
@@ -8,9 +8,9 @@ gsap.registerPlugin(ScrollTrigger);
 let divisoresTexto = [];
 let animacionesTexto = [];
 
-// Configura las animaciones para elementos con clase .nombre
+// Anima los textos con clase .nombre
 export function configurarAnimacionesNombre() {
-  // Revertir splits y animaciones anteriores
+  // Limpiar animaciones anteriores primero
   divisoresTexto.forEach((split) => {
     if (split && split.revert) {
       split.revert();
@@ -38,7 +38,7 @@ export function configurarAnimacionesNombre() {
     const split = new SplitType(elem, { types: 'words, chars' });
     divisoresTexto.push(split);
 
-    // Guardar referencia en el elemento para poder limpiarla después
+    // Guardamos la referencia para poder limpiarla después
     elem._splitType = split;
 
     const animacion = gsap.from(split.chars, {
@@ -59,7 +59,7 @@ export function configurarAnimacionesNombre() {
   });
 }
 
-// Reinicia todas las animaciones de los elementos .nombre
+// Reinicia las animaciones de .nombre
 export function reiniciarAnimacionesNombre() {
   // Revertir splits y animaciones anteriores
   divisoresTexto.forEach((split) => {
@@ -87,13 +87,13 @@ export function reiniciarAnimacionesNombre() {
     }
   });
 
-  // Ejecutar configuración otra vez
+  // Volver a configurar
   setTimeout(() => {
     configurarAnimacionesNombre();
   }, 100);
 }
 
-// Inicializa las animaciones de texto revelado (.revelartext)
+// Anima los textos revelados (.revelartext)
 export function inicializarAnimacionesRevealText() {
   const elementosRevealText = document.querySelectorAll('.revelartext');
 
@@ -107,7 +107,7 @@ export function inicializarAnimacionesRevealText() {
     // Guardar referencia para poder revertir después
     elemento._splitType = textoSeparado;
 
-    // Separar los caracteres que están dentro de span
+    // Separamos los caracteres que están dentro de span
     const caracteresSpan = textoSeparado.chars.filter((c) => c.closest('span'));
     const caracteresNormales = textoSeparado.chars.filter((c) => !c.closest('span'));
 
@@ -163,7 +163,7 @@ export function reiniciarAnimacionesRevealText() {
     const colorTexto = '#a89c89';
     const colorSpan = '#ec7c26';
 
-    // El contenido ya fue actualizado en traducirPaginaOptimizada
+    // El contenido ya está traducido
     const textoSeparado = new SplitType(elemento, { types: 'words, chars' });
 
     // Guardar referencia para poder revertir después
@@ -218,23 +218,39 @@ export function actualizarAnimacionExperiencia() {
   const experienceItems = document.querySelectorAll('.experiencia-item');
 
   experienceItems.forEach((item) => {
+    // Crear un elemento temporal para calcular el ancho real del texto
     const tempElement = document.createElement('div');
     tempElement.style.position = 'absolute';
     tempElement.style.visibility = 'hidden';
     tempElement.style.whiteSpace = 'nowrap';
-    tempElement.style.fontSize = getComputedStyle(item).fontSize;
-    tempElement.style.fontFamily = getComputedStyle(item).fontFamily;
-    tempElement.style.fontWeight = getComputedStyle(item).fontWeight;
-    tempElement.innerHTML = item.innerHTML;
-
+    tempElement.style.height = 'auto';
+    tempElement.style.width = 'auto';
+    
+    // Copiar estilos de texto del elemento original
+    const computedStyle = getComputedStyle(item);
+    tempElement.style.fontSize = computedStyle.fontSize;
+    tempElement.style.fontFamily = computedStyle.fontFamily;
+    tempElement.style.fontWeight = computedStyle.fontWeight;
+    tempElement.style.fontStyle = computedStyle.fontStyle;
+    tempElement.style.letterSpacing = computedStyle.letterSpacing;
+    
+    // Clonar el contenido, incluyendo el SVG
+    const clone = item.cloneNode(true);
+    clone.style.padding = '0';
+    clone.style.margin = '0';
+    clone.style.width = 'auto';
+    clone.style.maxWidth = 'none';
+    tempElement.appendChild(clone);
+    
     document.body.appendChild(tempElement);
     const textWidth = tempElement.offsetWidth;
     document.body.removeChild(tempElement);
+    
     item.style.setProperty('--text-width', `${textWidth}px`);
   });
 }
 
-// Limpia todos los SplitTypes aplicados a elementos con animaciones
+// Limpia todos los SplitTypes de las animaciones
 export function limpiarTodosSplitTypes() {
   document.querySelectorAll('.revelartext').forEach((elem) => {
     if (elem._splitType) {
@@ -248,6 +264,47 @@ export function limpiarTodosSplitTypes() {
       elem._splitType.revert();
       elem._splitType = null;
     }
+  });
+}
+
+// Anima las estrellas SVG cuando entran en pantalla
+export function inicializarAnimacionesEstrellasSVG() {
+  const experienciaItems = document.querySelectorAll('.experiencia-item');
+  
+  experienciaItems.forEach((item) => {
+    // Buscamos el SVG en el primer span
+    const firstSpan = item.querySelector('span:first-child');
+    if (!firstSpan) return;
+    
+    const svgContainer = firstSpan.querySelector('.star-svg');
+    if (!svgContainer) return;
+    
+    const path = svgContainer.querySelector('path');
+    if (!path) return;
+    
+    // Asegurar que stroke-dasharray esté configurado
+    if (!path.getAttribute('stroke-dasharray')) {
+      path.setAttribute('stroke-dasharray', '64');
+    }
+    
+    // Configurar el estado inicial en oculto
+    gsap.set(path, {
+      strokeDashoffset: 64
+    });
+    
+    // Crear animación al scroll 
+    gsap.to(path, {
+      strokeDashoffset: 0,
+      duration: 0.50,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: item,
+        start: 'top 95%',
+        end: 'top 2%',
+        toggleActions: 'play reverse play reverse',
+        markers: false,
+      }
+    });
   });
 }
 
@@ -265,4 +322,9 @@ export function reiniciarTodasLasAnimacionesTexto() {
   setTimeout(() => {
     reiniciarAnimacionesRevealText();
   }, 100);
+  
+  // Reiniciar animaciones de estrellas SVG
+  setTimeout(() => {
+    inicializarAnimacionesEstrellasSVG();
+  }, 150);
 }

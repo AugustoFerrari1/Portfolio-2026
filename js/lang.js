@@ -25,28 +25,28 @@ export const traducciones = {
 
     // Experiencia
     exp: 'EXPERIENCIA',
-    'exp.1': '<span>✮</span>  Desarrollo <span>WEB </span>',
-    'exp.2': '<span>✮</span>  Desarrollo de <span>APLICACIONES</span>',
+    'exp.1': '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Desarrollo <span>WEB </span>',
+    'exp.2': '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Desarrollo de <span>APLICACIONES</span>',
     'exp.3':
-      '<span>✮</span>  Automatizacion y logistica con <span>SISTEMAS</span> a <span>MEDIDA</span>',
-    'exp.4': '<span>✮</span>  Diseño de interfaces de <span>GESTION</span>',
-    'exp.5': '<span>✮</span>  Codificacion y administracion de <span>BASE</span> de <span>DATOS</span>',
+      '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Automatizacion y logistica con <span>SISTEMAS</span> a <span>MEDIDA</span>',
+    'exp.4': '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Diseño de interfaces de <span>GESTION</span>',
+    'exp.5': '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Codificacion y administracion de <span>BASE</span> de <span>DATOS</span>',
     'exp.6':
-      '<span>✮</span> Automatización de <span>PRUEBAS UNITARIAS</span>',
+      '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span> Automatización de <span>PRUEBAS UNITARIAS</span>',
     'exp.7':
-      '<span>✮</span> Ejecución de <span>PRUEBAS EXPLORATORIAS</span>',
+      '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span> Ejecución de <span>PRUEBAS EXPLORATORIAS</span>',
     'exp.8':
-      '<span>✮</span> Optimización de <span>CODIGO</span> y <span>ORDEN</span> de <span>PROGRAMAS</span>',
+      '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span> Optimización de <span>CODIGO</span> y <span>ORDEN</span> de <span>PROGRAMAS</span>',
     'exp.desc.1':
       'Desarrollo de sitios web responsivos y modernos utilizando tecnologías como HTML5, CSS3, JavaScript y frameworks modernos. Creación de interfaces intuitivas y optimizadas para diferentes dispositivos.',
     'exp.desc.2':
       'Desarrollo de aplicaciones web y de escritorio con arquitecturas escalables. Implementación de funcionalidades complejas y sistemas robustos que mejoran la eficiencia operativa.',
     'exp.desc.3':
-      'Diseño e implementación de sistemas personalizados para automatizar procesos logísticos y operativos. Soluciones adaptadas a las necesidades específicas de cada negocio.',
+      'Diseño e implementación de sistemas personalizados para automatizar procesos logísticos y operativos.',
     'exp.desc.4':
       'Creación de interfaces administrativas intuitivas y funcionales. Diseño de dashboards y paneles de control que facilitan la gestión y visualización de datos.',
     'exp.desc.5':
-      'Diseño, implementación y optimización de bases de datos relacionales. Administración de esquemas, consultas complejas y mantenimiento de la integridad de los datos.',
+      'Diseño, implementación y optimización de bases de datos. Administración de esquemas, consultas complejas y mantenimiento de la integridad de los datos.',
     'exp.desc.6':
       'Implementación de suites de pruebas automatizadas para garantizar la calidad del código. Desarrollo de tests unitarios que validan funcionalidades específicas del sistema.',
     'exp.desc.7':
@@ -130,28 +130,28 @@ export const traducciones = {
 
     // Experiencia
     exp: 'EXPERIENCE',
-    'exp.1': '<span>✮</span>  Web <span>DEVELOPMENT</span>',
-    'exp.2': '<span>✮</span>  Application <span>DEVELOPMENT</span>',
+    'exp.1': '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Web <span>DEVELOPMENT</span>',
+    'exp.2': '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Application <span>DEVELOPMENT</span>',
     'exp.3':
-      '<span>✮</span>  Automation and logistics with <span>CUSTOM</span> <span>SYSTEMS</span>',
-    'exp.4': '<span>✮</span>  Design of <span>MANAGEMENT</span> interfaces',
-    'exp.5': '<span>✮</span>  Coding and administration of <span>DATABASES</span>',
+      '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Automation and logistics with <span>CUSTOM</span> <span>SYSTEMS</span>',
+    'exp.4': '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Design of <span>MANAGEMENT</span> interfaces',
+    'exp.5': '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Coding and administration of <span>DATABASES</span>',
     'exp.6':
-      '<span>✮</span>  Automation of <span>UNIT TESTING</span>',
+      '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Automation of <span>UNIT TESTING</span>',
     'exp.7':
-      '<span>✮</span>  Execution of <span>EXPLORATORY TESTING</span>',
+      '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span>  Execution of <span>EXPLORATORY TESTING</span>',
     'exp.8':
-      '<span>✮</span> Optimization of <span>CODE</span> and <span>PROGRAM</span> <span>ORGANIZATION</span>',
+      '<span><svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ec7c26" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"></path></svg></span> Optimization of <span>CODE</span> and <span>PROGRAM</span> <span>ORGANIZATION</span>',
     'exp.desc.1':
       'Development of responsive and modern websites using technologies such as HTML5, CSS3, JavaScript and modern frameworks. Creation of intuitive and optimized interfaces for different devices.',
     'exp.desc.2':
       'Development of web and desktop applications with scalable architectures. Implementation of complex functionalities and robust systems that improve operational efficiency.',
     'exp.desc.3':
-      'Design and implementation of customized systems to automate logistical and operational processes. Solutions adapted to the specific needs of each business.',
+      'Design and implementation of customized systems to automate logistical and operational processes.',
     'exp.desc.4':
       'Creation of intuitive and functional administrative interfaces. Design of dashboards and control panels that facilitate data management and visualization.',
     'exp.desc.5':
-      'Design, implementation and optimization of relational databases. Schema administration, complex queries and data integrity maintenance.',
+      'Design, implementation and optimization of databases. Schema administration, complex queries and data integrity maintenance.',
     'exp.desc.6':
       'Implementation of automated test suites to ensure code quality. Development of unit tests that validate specific system functionalities.',
     'exp.desc.7':
