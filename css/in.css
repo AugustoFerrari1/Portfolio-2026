@@ -545,6 +545,15 @@ a {
     box-shadow: 0 0 5px #a89c89, 0 0 25px #a89c89;
 }
 
+/* Mostrar CONTACTO antes en móviles: reducir margen superior */
+@media (max-width: 600px) {
+  .contacto {
+    margin-top: 10vw !important;
+    /* O usa un valor menor si ya tiene margin-top */
+    padding-top: 0 !important;
+  }
+}
+
 /* Barra de progreso lateral */
 .scroll-progress-bar {
     position: fixed;
@@ -1032,8 +1041,8 @@ footer p {
 }
 
 /* -------> Celulares <----------*/
-/* PRO MAX - 426px to 480px */
-@media (max-width: 480px) and (min-width: 426px) {
+/* PRO MAX - 432px to 480px */
+@media (max-width: 480px) and (min-width: 432px) {
     .menubar {
         padding: 12px 10px;
     }
@@ -1111,8 +1120,8 @@ footer p {
     }
 }
 
-/* Normal - 373px to 425px */
-@media (max-width: 425px) and (min-width: 373px) {
+/* Normal - 373px to 430px */
+@media (max-width: 430px) and (min-width: 373px) {
     .menubar img {
         width: 40px;
         height: 30px;
@@ -1165,6 +1174,10 @@ footer p {
 
     .contacto {
         margin-top: 30%;
+    }
+
+    .contacto h2{
+        font-size: 3vw;
     }
     
 }
@@ -1339,5 +1352,31 @@ footer p {
     
     footer p {
         font-size: 11px;
+    }
+}
+
+@media (max-width: 440px) {
+    footer {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 350px) {
+    .contacto .op1 {
+        margin-top: 3%;
+    }
+
+    footer {
+        margin-top: 7%;
+    }
+}
+
+@media (max-width: 300px) {
+    .contacto .op1 {
+        margin-top: 7%;
+    }
+
+    footer {
+        margin-top: 8%;
     }
 }

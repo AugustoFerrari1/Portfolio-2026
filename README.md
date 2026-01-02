@@ -10,8 +10,6 @@ Este espacio es una vitrina de mi evolución técnica. Ha sido desarrollado con 
 
 ---
 
-## Proyectos Destacados
-
 # Proyectos
 
 ## ALQUILERUY

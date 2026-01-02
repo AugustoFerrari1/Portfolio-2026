@@ -104,7 +104,7 @@ function dividirPalabrasEnSpans(elemento) {
     }
     
     const texto = span.textContent.trim();
-    const palabras = texto.split(/\s+/).filter(p => p.length > 0);
+    const palabras = texto.split(/\s+/).filter((p) => p.length > 0);
     
     // Si hay múltiples palabras, dividirlas en spans separados
     if (palabras.length > 1) {
@@ -178,8 +178,8 @@ export function inicializarAnimacionesRevealText() {
       ? {
           trigger: elemento,
           start: 'top 98%',
-          end: 'top 60%',
-          scrub: 0.15,
+          end: 'top 20%', // un poco más rápido que antes
+          scrub: 0.45, // menos lento que 0.7, más lento que 0.15
           toggleActions: 'play play reverse reverse',
           markers: false,
         }
