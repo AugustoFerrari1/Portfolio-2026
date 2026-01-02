@@ -151,6 +151,8 @@ export function inicializarAnimacionesRevealText() {
   const elementosRevealText = document.querySelectorAll('.revelartext');
 
   elementosRevealText.forEach((elemento, i) => {
+    // Detectar si es móvil/tablet
+    const isMobile = window.innerWidth <= 1200;
     const colorFondo = elemento.dataset.bgColor || '#353535';
     const colorTexto = '#a89c89';
     const colorSpan = '#ec7c26';
@@ -171,6 +173,25 @@ export function inicializarAnimacionesRevealText() {
     // Aplicar color inicial
     gsap.set(textoSeparado.chars, { color: colorFondo });
 
+    // Configuración responsive para scrollTrigger
+    const scrollConfig = isMobile
+      ? {
+          trigger: elemento,
+          start: 'top 98%',
+          end: 'top 60%',
+          scrub: 0.15,
+          toggleActions: 'play play reverse reverse',
+          markers: false,
+        }
+      : {
+          trigger: elemento,
+          start: 'top 90%',
+          end: 'top -30%',
+          scrub: true,
+          toggleActions: 'play play reverse reverse',
+          markers: false,
+        };
+
     // Animación para texto general
     gsap.fromTo(
       caracteresNormales,
@@ -179,14 +200,7 @@ export function inicializarAnimacionesRevealText() {
         color: colorTexto,
         duration: 0.8,
         stagger: 0.05,
-        scrollTrigger: {
-          trigger: elemento,
-          start: 'top 90%',
-          end: 'top -30%',
-          scrub: true,
-          toggleActions: 'play play reverse reverse',
-          markers: false,
-        },
+        scrollTrigger: scrollConfig,
       }
     );
 
@@ -198,14 +212,7 @@ export function inicializarAnimacionesRevealText() {
         color: colorSpan,
         duration: 0.8,
         stagger: 0.05,
-        scrollTrigger: {
-          trigger: elemento,
-          start: 'top 90%',
-          end: 'top -30%',
-          scrub: true,
-          toggleActions: 'play play reverse reverse',
-          markers: false,
-        },
+        scrollTrigger: scrollConfig,
       }
     );
   });
@@ -216,6 +223,8 @@ export function reiniciarAnimacionesRevealText() {
   const elementosRevealText = document.querySelectorAll('.revelartext');
 
   elementosRevealText.forEach((elemento, i) => {
+    // Detectar si es móvil/tablet
+    const isMobile = window.innerWidth <= 900;
     const colorFondo = elemento.dataset.bgColor || '#353535';
     const colorTexto = '#a89c89';
     const colorSpan = '#ec7c26';
@@ -235,6 +244,25 @@ export function reiniciarAnimacionesRevealText() {
 
     gsap.set(textoSeparado.chars, { color: colorFondo });
 
+    // Configuración responsive para scrollTrigger
+    const scrollConfig = isMobile
+      ? {
+          trigger: elemento,
+          start: 'top 70%',
+          end: 'top -30%',
+          scrub: 0.15,
+          toggleActions: 'play play reverse reverse',
+          markers: false,
+        }
+      : {
+          trigger: elemento,
+          start: 'top 90%',
+          end: 'top -30%',
+          scrub: true,
+          toggleActions: 'play play reverse reverse',
+          markers: false,
+        };
+
     gsap.fromTo(
       caracteresNormales,
       { color: colorFondo },
@@ -242,14 +270,7 @@ export function reiniciarAnimacionesRevealText() {
         color: colorTexto,
         duration: 0.8,
         stagger: 0.05,
-        scrollTrigger: {
-          trigger: elemento,
-          start: 'top 90%',
-          end: 'top -30%',
-          scrub: true,
-          toggleActions: 'play play reverse reverse',
-          markers: false,
-        },
+        scrollTrigger: scrollConfig,
       }
     );
 
@@ -260,14 +281,7 @@ export function reiniciarAnimacionesRevealText() {
         color: colorSpan,
         duration: 0.8,
         stagger: 0.05,
-        scrollTrigger: {
-          trigger: elemento,
-          start: 'top 90%',
-          end: 'top -30%',
-          scrub: true,
-          toggleActions: 'play play reverse reverse',
-          markers: false,
-        },
+        scrollTrigger: scrollConfig,
       }
     );
   });

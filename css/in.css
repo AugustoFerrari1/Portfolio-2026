@@ -496,6 +496,9 @@ a {
     color: #a89c89;
     margin-left: 20%;
 }
+.contacto .contbtn {
+    margin-left: 7%;
+}
 
 .contacto a, a:visited {
   text-decoration: none !important;
@@ -503,23 +506,20 @@ a {
 }
 
 .contacto h2 {
+    font-size: 2.3vw;
     color: #a89c89;
     cursor: pointer;
     padding: 4px;
     transition: background-color 0.7s ease, color 0.7s ease;
     transition: box-shadow 0.7s ease, color 0.7s ease;
-    margin-left: 20%;
 }
 
 .contacto .op1 {
     opacity: 1;
     margin-top: 1%;
     display: flex;
+    margin-left: 20%;
     margin-bottom: 2%;
-}
-
-.contacto .contbtn {
-    margin-left: 13%;
 }
 
 .contacto .op1 .color {
@@ -705,6 +705,7 @@ footer p {
         line-height: 54px;
         padding-right: 15%;
     }
+    
 }
 
 /* Grande - 1440px to 1919px */
@@ -722,18 +723,10 @@ footer p {
         line-height: 50px;
         padding-right: 18%;
     }
-
-    .contacto h2 {
-        font-size: 23px;
-    }
 }
 
 /* Mas usada - 1366px to 1439px */
 @media (max-width: 1439px) and (min-width: 1200px) {
-    .contacto .contbtn {
-        margin-left: 8%;
-    }
-    
     .inicio h2 {
         font-size: 80px;
     }
@@ -750,7 +743,7 @@ footer p {
 }
 
 /* Chicas y medianas - 1024px to 1199px */
-@media (max-width: 1199px) and (min-width: 1080px) {
+@media (max-width: 1199px) and (min-width: 1024px) {
     .sobremi .contenedor {
         margin-left: 15%;
     }
@@ -761,18 +754,6 @@ footer p {
     
     .trabajos {
         margin-left: 15%;
-    }
-    
-    .contacto .nombre {
-        margin-left: 15%;
-    }
-    
-    .contacto h2 {
-        margin-left: 15%;
-    }
-    
-    .contacto .contbtn {
-        margin-left: 8%;
     }
     
     .inicio h2 {
@@ -797,10 +778,19 @@ footer p {
     .trabajos .card {
         width: 90%;
     }
+
+    .contacto .nombre, .contacto .op1 {
+        margin-left: 15%;
+    }
+
+    .contacto h2 {
+        font-size: 2.9vw;
+    }
+
 }
 
 /* Normal - 920px to 1023px */
-@media (max-width: 1080px) and (min-width: 920px) {
+@media (max-width: 1023px) and (min-width: 920px) {
     .experiencia-item {
         font-size: 25px;
         line-height: 35px;
@@ -815,14 +805,6 @@ footer p {
     .trabajos .nombre {
         margin-bottom: 4%;
     }
-
-    .contacto .op1 {
-        margin-top: 0%;
-    }
-    
-    .contacto .contbtn {
-        margin-left: 5%;
-    }
     
     .inicio h2 {
         font-size: 65px;
@@ -831,25 +813,10 @@ footer p {
     .progress {
         margin-right: 20%;
     }
-    
-    .sobremi .contenedor {
-        margin-left: 10%;
-    }
-    
-    .atributos {
-        margin-left: 10%;
-    }
-    
-    .trabajos {
-        margin-left: 10%;
-    }
 
-    .contacto .nombre, .contacto h2 {
-        margin-left: 10%;
-    }
 
-    .contacto .nombre, .contacto h2 {
-        font-size: 33px;
+    .contacto h2 {
+        font-size: 2.3vw;
     }
 
 }
@@ -890,7 +857,7 @@ footer p {
     }
 
     .sobremi .contenedor {
-        margin-left: 8%;
+        margin-left: 10%;
         padding-right: 8%;
     }
     
@@ -911,7 +878,7 @@ footer p {
     }
     
     .atributos {
-        margin-left: 8%;
+        margin-left: 10%;
         padding-right: 8%;
     }
     
@@ -924,7 +891,7 @@ footer p {
     }
 
     .trabajos {
-        margin-left: 8%;
+        margin-left: 10%;
         padding-right: 8%;
     }
     
@@ -940,32 +907,12 @@ footer p {
         font-size: 12px;
     }
 
-    .contacto {
-        padding: 0 8%;
+    .contacto .nombre, .contacto .op1 {
+        margin-left: 10%;
     }
-    
-    .contacto .nombre {
-        margin-left: 0%;
-    }
-    
+
     .contacto h2 {
-        margin-left: 0%;
-        font-size: 28px;
-    }
-    
-    .contacto p {
-        font-size: 12px;
-    }
-
-    .contacto .op1 {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .contacto .contbtn {
-        margin-left: 0%;
+        font-size: 2.8vw;
     }
     
     footer p {
@@ -1067,29 +1014,16 @@ footer p {
         font-size: 11px;
     }
 
-    .contacto {
-        padding: 0 5%;
-        margin-top: 20%;
+    .contacto .nombre, .contacto .op1 {
+        margin-left: 5%;
     }
-    
-    .contacto h2 {
-        margin-left: 0%;
-        font-size: 24px;
-    }
-    
+
     .contacto p {
         font-size: 11px;
     }
 
-    .contacto .op1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .contacto .contbtn {
-        margin-left: 0%;
-        margin-top: 2%;
+    .contacto h2 {
+        font-size: 3.4vw;
     }
     
     footer p {
@@ -1172,13 +1106,8 @@ footer p {
         margin-top: 30%;
     }
 
-    .contacto {
-        padding: 0 3%;
-        margin-top: 25%;
-    }
-    
-    .contacto h2 {
-        font-size: 20px;
+    .contacto .nombre, .contacto .op1 {
+        margin-left: 3%;
     }
 }
 
@@ -1238,9 +1167,6 @@ footer p {
         margin-top: 30%;
     }
     
-    .contacto h2 {
-        font-size: 18px;
-    }
 }
 
 /* Chiquito - 340px to 375px */
@@ -1316,14 +1242,10 @@ footer p {
         margin-top: 40%;
     }
 
-    .contacto {
-        padding: 0 2%;
-        margin-top: 35%;
+    .contacto .nombre, .contacto .op1 {
+        margin-left: 2%;
     }
     
-    .contacto h2 {
-        font-size: 16px;
-    }
     
     .alert {
         font-size: 10px;
@@ -1406,14 +1328,10 @@ footer p {
         margin-top: 45%;
     }
 
-    .contacto {
-        padding: 0 1%;
-        margin-top: 40%;
+    .contacto .nombre, .contacto .op1 {
+        margin-left: 1%;
     }
     
-    .contacto h2 {
-        font-size: 14px;
-    }
     
     .alert {
         font-size: 9px;

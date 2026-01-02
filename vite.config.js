@@ -2,11 +2,11 @@ import { defineConfig } from 'vite';
 import legacy from '@vitejs/plugin-legacy';
 
 // Configuración para GitHub Pages
-// Si tu repositorio está en: usuario.github.io/Portfolio-2025
-// El base debe ser: '/Portfolio-2025/'
+// Si tu repositorio está en: usuario.github.io/Portfolio-2026
+// El base debe ser: '/Portfolio-2026/'
 // Si está en la raíz: usuario.github.io, cambia a: '/'
 export default defineConfig({
-  base: '/Portfolio-2025/',
+  base: '/Portfolio-2026/',
   plugins: [
     legacy({
       targets: ['defaults', 'not IE 11'],

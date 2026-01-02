@@ -1,7 +1,7 @@
 {
-  "name": "portfolio-2025",
+  "name": "portfolio-2026",
   "version": "1.0.0",
-  "description": "Mi portfolio 2025 - Augusto Ferrari",
+  "description": "Mi portfolio 2026 - Augusto Ferrari",
   "type": "module",
   "directories": {
     "doc": "docs"
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AugustoFerrari1/Portfolio-2025.git"
+    "url": "git+https://github.com/AugustoFerrari1/Portfolio-2026.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AugustoFerrari1/Portfolio-2025/issues"
+    "url": "https://github.com/AugustoFerrari1/Portfolio-2026/issues"
   },
-  "homepage": "https://github.com/AugustoFerrari1/Portfolio-2025#readme",
+  "homepage": "https://github.com/AugustoFerrari1/Portfolio-2026#readme",
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",

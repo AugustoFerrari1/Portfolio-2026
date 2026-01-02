@@ -1,20 +1,16 @@
-# Portfolio de Augusto Ferrari - 2025
+# Portfolio de Augusto Ferrari - 2026
 
-¡Hola! Soy **Augusto Ferrari**, Este repositorio es mi portfolio personal para el año 2025, donde presento algunos de mis proyectos y habilidades en desarrollo front-end y más allá.
-
-Mi objetivo es combinar la funcionalidad con un diseño intuitivo y llamativo, siempre buscando las mejores prácticas y aprendiendo nuevas tecnologías.
+¡Hola! Soy **Augusto Ferrari**. Este repositorio es mi portfolio profesional para el año 2026, donde presento mis proyectos en **desarrollo Full Stack**, **arquitectura de software** y **optimización de sistemas**.
 
 ---
 
 ## Sobre Este Portfolio
 
-Este portfolio ha sido desarrollado utilizando tecnologías web estándar, centrándose en la interactividad y la optimización. Sirve como una vitrina para mostrar mi evolución y mis capacidades como desarrollador.
+Este espacio es una vitrina de mi evolución técnica. Ha sido desarrollado con tecnologías web modernas, priorizando la interactividad, el rendimiento y la limpieza del código.
 
 ---
 
 ## Proyectos Destacados
-
-Aquí podrás encontrar una colección de mis trabajos más recientes y representativos. Cada proyecto busca resolver un problema específico o explorar una nueva tecnología.
 
 # Proyectos
 
@@ -33,11 +29,11 @@ La plataforma incluye un **sistema de búsqueda avanzada** con **categorías org
 - Publicación y gestión de productos para vendedores
 - Alquiler de objetos y propiedades (casas, autos, herramientas, equipos)
 
-**Tecnologías Utilizadas:**  
-Next.js 14 · React 18 · TypeScript · Prisma ORM · PostgreSQL · NextAuth.js · MercadoPago · Tailwind CSS · Radix UI
+* **Stack:**
+ `Next.js 14` · `React 18` · `TypeScript` · `Prisma ORM` · `PostgreSQL` · `Tailwind CSS` · `Docker`.
 
 **Ver Proyecto:**
-- Actualmente el proyecto no está disponible para su visualización en línea
+- [Carpeta del proyecto](https://github.com/AugustoFerrari1/PixelShift.git)
 
 ---
 
@@ -51,12 +47,11 @@ Página web especializada en la venta de servicios digitales para empresas, empr
 - Integración de servicios digitales: páginas web, tiendas online y sistemas de gestión.
 - Proceso de compra simplificado para facilitar la contratación de servicios.
 
-**Tecnologías Utilizadas:**  
-HTML · CSS · JavaScript · PHP
+**Stack:**
+ `HTML5` · `CSS3` · `JavaScript` · `PHP`.
 
 **Ver Proyecto:**
-- [Ver Pagina](https://pixelshft.com/inicio/)
-- [Carpeta del proyecto](Proximamente)
+- [Carpeta del proyecto](https://github.com/AugustoFerrari1/PixelShift.git)
 
 ---
 
@@ -70,8 +65,8 @@ Página web integral para una automotora, con sistema de cuentas, carrito de com
 - Carrito de compras con funcionalidades de reserva, alquiler y compra de vehículos.
 - Backend avanzado con control de usuarios, roles, inventario y operaciones del negocio.
 
-**Tecnologías Utilizadas:**  
-HTML · CSS · JavaScript · PHP
+**Stack:** 
+`HTML5` · `CSS3` · `JavaScript` · `PHP` · `MySQL`.
 
 **Ver Proyecto:**
 - Actualmente el proyecto no esta publicado
@@ -99,11 +94,11 @@ Si deseas explorar el código o ejecutar este portfolio en tu máquina local, si
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone https://github.com/AugustoFerrari1/Portfolio-2025.git
+    git clone https://github.com/AugustoFerrari1/Portfolio-2026.git
     ```
 2.  **Navega al directorio del proyecto:**
     ```bash
-    cd Portfolio-2025
+    cd Portfolio-2026
     ```
 3.  **Instala las dependencias:**
     ```bash
@@ -154,7 +149,7 @@ El proyecto incluye un workflow de GitHub Actions (`.github/workflows/deploy.yml
 * **Correo Electrónico:** https://mail.google.com/mail/u/0/?fs=1&to=augustoferrari100@gmail.com&su=CONTACTO&body=Hola,%20que%20tal...&bcc=augustoferrari100@gmail.com&tf=cm
 * **LinkedIn:** www.linkedin.com/in/augustoferrari1
 * **GitHub:** https://github.com/AugustoFerrari1
-* **Sitio Web Personal:** https://augustoferrari1.github.io/Portfolio-2025/
+* **Sitio Web Personal:** https://augustoferrari1.github.io/Portfolio-2026/
 
 ---
 
