@@ -145,7 +145,7 @@ El proyecto incluye un workflow de GitHub Actions (`.github/workflows/deploy.yml
 ¡Me encantaría conectar contigo! No dudes en contactarme si tienes alguna pregunta, sugerencia o una oportunidad de colaboración.
 
 * **Correo Electrónico:** https://mail.google.com/mail/u/0/?fs=1&to=augustoferrari100@gmail.com&su=CONTACTO&body=Hola,%20que%20tal...&bcc=augustoferrari100@gmail.com&tf=cm
-* **LinkedIn:** www.linkedin.com/in/augustoferrari1
+* **LinkedIn:** www.linkedin.com/in/augusto-ferrari
 * **GitHub:** https://github.com/AugustoFerrari1
 * **Sitio Web Personal:** https://augustoferrari1.github.io/Portfolio-2026/
 
